@@ -38,7 +38,6 @@
 </template>
 
 <script>
-//import Vue from 'vue'
 import { VueSvgGauge } from "vue-svg-gauge";
 
 export default {
@@ -116,15 +115,11 @@ export default {
   text-align: center;
   background: #f2f2f2;
 }
-.gauge-container {
-  /* padding: 0 50px; */
-}
 .gauge-chart {
   position: relative;
   float: left;
   width: 25%;
   padding: 30px 35px;
-  /* border-bottom: 1px solid #eee; */
 }
 vue-svg-gauge {
   padding: 20px;
