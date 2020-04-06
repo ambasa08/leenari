@@ -108,7 +108,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .time {
   padding: 20px 0;
   font-size: 20px;
@@ -120,72 +120,74 @@ export default {
   float: left;
   width: 25%;
   padding: 30px 35px;
-}
-vue-svg-gauge {
-  padding: 20px;
-}
-.progress-wrap {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%);
-  text-align: center;
-  font-size: 1.3rem;
-}
-.gauge-wrap {
-  text-align: center;
-  font-weight: 400;
-}
-.gauge-text {
-  margin-bottom: 10px;
-  text-align: center;
-  line-height: 1.4;
-}
-.f_mname {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.f_p {
-  color: #a6a6a6;
-  font-size: 1.3rem;
-}
-.f_end {
-  font-size: 1.5rem;
+  .gauge-text {
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.4;
+    .f_mname {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .f_p {
+      color: #a6a6a6;
+      font-size: 1.3rem;
+    }
+  }
+  vue-svg-gauge {
+    padding: 20px;
+  }
+  .progress-wrap {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .gauge-wrap {
+    text-align: center;
+    font-weight: 400;
+    .f_end {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
   .gauge-chart {
     width: 33.33%;
-  }
-  .progress-wrap {
-    font-size: 1.2rem;
-  }
-  .f_mname {
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  .f_p {
-    color: #a6a6a6;
-    font-size: 1.2rem;
-  }
-  .f_end {
-    font-size: 1.3rem;
+    .progress-wrap {
+      font-size: 1.2rem;
+    }
+    .f_ {
+      &.mname {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+      &.p {
+        color: #a6a6a6;
+        font-size: 1.2rem;
+      }
+      &.end {
+        font-size: 1.3rem;
+      }
+    }
   }
 }
 @media (max-width: 1200px) {
   .progress-wrap {
     font-size: 1rem;
   }
-  .f_mname {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  .f_p {
-    color: #a6a6a6;
-    font-size: 1rem;
-  }
-  .f_end {
-    font-size: 1.2rem;
+  .f_ {
+    &.mname {
+      font-size: 1.2rem;
+    }
+    &.p {
+      font-size: 1rem;
+    }
+    &.end {
+      font-size: 1.2rem;
+    }
   }
 }
 @media (max-width: 768px) {
@@ -197,20 +199,20 @@ vue-svg-gauge {
   .gauge-chart {
     width: 100%;
     border-bottom: 1px solid #eee;
-  }
-  .progress-wrap {
-    font-size: 1.3rem;
-  }
-  .f_mname {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  .f_p {
-    color: #a6a6a6;
-    font-size: 1.3rem;
-  }
-  .f_end {
-    font-size: 1.5rem;
+    .progress-wrap {
+      font-size: 1.3rem;
+    }
+    .f_ {
+      &.mname {
+        font-size: 1.5rem;
+      }
+      &.p {
+        font-size: 1.3rem;
+      }
+      &.end {
+        font-size: 1.5rem;
+      }
+    }
   }
 }
 @media (max-width: 375px) {
